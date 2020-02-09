@@ -8,7 +8,7 @@ type LRUCache struct {
 	leastUsedQueue list.List
 }
 
-func Constructor(capacity int) LRUCache {
+func NewLRUCache(capacity int) LRUCache {
 	return LRUCache{cap: capacity, m: make(map[string]*list.Element)}
 }
 

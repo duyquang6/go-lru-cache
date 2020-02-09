@@ -3,7 +3,7 @@ package lru
 import "testing"
 
 func TestLRUCache_Get(t *testing.T) {
-	cache := Constructor(2)
+	cache := NewLRUCache(2)
 	cache.Put("1", 1)
 	cache.Put("2", 2)
 	cache.Put("3", 2)
